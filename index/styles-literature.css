@@ -1,0 +1,76 @@
+/* styles-literature.css */
+.literature-page {
+    text-align: left;
+    margin-left: 1px;
+    padding: 1px;
+}
+
+.section {
+    border-left: 1px solid #333; /* 添加竖线 */
+    padding-left: 10px; /* 左侧留出一些间距 */
+    margin-bottom: 20px; /* 底部留出一些间距 */
+}
+
+/* 调整字体大小和行高 */
+.section h2, .section p {
+    font-size: 18px; /* 调整字体大小 */
+    line-height: 0.5; /* 调整行高，可以根据需要调整 */
+}
+
+/* 为特定词汇添加下划线 */
+.section p span.highlight {
+    text-decoration: underline; /* 添加下划线样式 */
+}
+
+
+
+        /* 添加以下样式以更改字体大小、行间距和位置 */
+        .literature-page {
+            margin: 10px; /* 添加外边距以控制位置 */
+        }
+
+        .artistic-font {
+            font-size: 24px; /* 更改字体大小 */
+            line-height: 1; /* 减小行间距 */
+        }
+
+        .section {
+            font-size: 16px; /* 更改字体大小 */
+            line-height: 1.2; /* 减小行间距 */
+            margin-top: 10px; /* 添加上边距以控制位置 */
+        }
+
+        .section h2 {
+            font-size: 18px; /* 更改字体大小 */
+            line-height: 1; /* 减小行间距 */
+        }
+
+        .section p {
+            margin: 5px 0; /* 调整段落的上下边距 */
+            font-size: 14px; /* 更改段落中文字的大小 */
+        }
+      
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}        
+
+
+
+
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-image {
+    width: 45%; /* 控制每个书籍项的宽度 */
+    margin-bottom: 20px; /* 设置书籍项之间的垂直间距 */
+}
+

@@ -1,0 +1,50 @@
+<!-- login-register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-login-register.css">
+    <title>登录 / 注册</title>
+</head>
+<body>
+    <header>
+        <h1>Login / Register</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="cart.html">购物车</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Login Form -->
+        <section id="login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">用户名:</label>
+                <input type="text" id="login-username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="login-password" required>
+                <button type="button" onclick="loginUser()">Login</button>
+            </form>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="registration-form">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <label for="new-username">用户名:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">密码:</label>
+                <input type="password" id="new-password" required>
+                <button type="button" onclick="registerUser()">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Online Bookstore
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

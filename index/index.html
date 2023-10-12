@@ -1,0 +1,206 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-index.css">
+    <link rel="stylesheet" href="section-title.css"> <!-- 添加这行来引用 section-title.css -->
+    <link rel="stylesheet" href="book-categories.css">
+    <link rel="stylesheet" href="styles-literature.css">
+
+  
+    <title>Online Bookstore</title>
+
+    
+    <style>
+        /* Add the following CSS styles to center-align the books */
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .book {
+            flex: 0 0 calc(50% - 20px);
+            margin: 10px;
+            text-align: center;
+
+          
+
+        }
+
+        .section-title {
+            text-align: center; /* Center-align the title */
+            margin-bottom: 20px; /* Add some spacing below the title */
+        }
+
+        .featured-books {
+            text-align: center; /* Center-align the featured books section */
+        }
+
+                /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+                /* CSS样式中添加以下样式 */
+        .search-books {
+            text-align: right; /* 右对齐 */
+            position: relative; /* 相对定位 */
+            top: -80px; /* 向上移动以与精选图书对齐 */
+            margin-right: 20px; /* 右侧留出一些间距 */
+        }
+
+
+        /* Add styles for modal content elements here */
+
+    </style>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header-container">
+            <h1>Welcome to the Online Bookstore</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="login-register.html">登录/注册</a></li>
+            <li class="nav-item"><a href="cart.html">购物车</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="book-categories">
+            <h2 class="section-title">书籍分类</h2>
+            <ul class="category-list">
+                
+                <li class="category-item"><a href="childrens-books.html">童书</a></li>
+                <li class="category-item"><a href="literature-books.html">文学</a></li>
+                <li class="category-item"><a href="#">小说</a></li>
+                <li class="category-item"><a href="#">历史</a></li>
+                <li class="category-item"><a href="#">经管</a></li>
+                <li class="category-item"><a href="#">艺术</a></li>
+            </ul>
+        </section>
+        
+        <section class="featured-books">
+
+            <h2 class="section-title">精选书籍</h2>
+            <!-- Featured books go here -->
+        </section>
+        <section class="search-books">
+            <!-- 将搜索图书部分移动到这里 -->
+  
+            <input type="text" id="search-input" placeholder="输入关键词...">
+            <button id="search-button">搜索</button>
+        </section>
+        <div class="books-container">
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i3/101450072/O1CN019aL2yR1CP1AvNZhr1-101450072.jpg" alt="Book 1">
+                <h3 class="book-title">每天懂一点人情世故</h3>
+                <p class="book-info">作者: 童岩</p>
+                <p class="book-info">价格: ¥10.99</p>
+                <!-- 添加一个点击事件处理程序来触发加入购物车的操作 -->
+                <button class="add-to-cart">加入购物车</button>
+
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/O1CN015voMfS1WH2nj9aRTB_!!0-item_pic.jpg_Q75.jpg" alt="Book 2">
+                <h3 class="book-title">人间值得</h3>
+                <p class="book-info">作者: 茗溪</p>
+                <p class="book-info">价格: ¥12.99</p>
+                <button class="add-to-cart">加入购物车</button>
+            </div>
+            <!-- Add more featured books here -->
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i2/2263306098/O1CN01Ax8d641uuw3bn2v14_!!2263306098.jpg_Q75.jpg" alt="Book 3">
+                <h3>我从未如此眷恋人间</h3>
+                <p>作者: 史铁生</p>
+                <p>价格: ¥9.99</p>
+                <button>加入购物车</button>
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i3/1049653664/O1CN01BVqx0U1cwA04HtEuR_!!0-item_pic.jpg_Q75.jpg" alt="Book 4">
+                <h3>我的地位</h3>
+                <p>作者: 史铁生</p>
+                <p>价格: ¥14.99</p>
+                <button>加入购物车</button>
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i1/288902762/O1CN01Rk7ZEA1WH2QapGNJJ_!!0-item_pic.jpg_Q75.jpg" alt="Book 5">
+                <h3>自卑与超越</h3>
+                <p>作者: 阿弗雷德·阿德勒</p>
+                <p>价格: ¥11.99</p>
+                <button>加入购物车</button>
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i3/2263306098/O1CN01tlRDK81uuvmWU0W3M_!!2263306098.jpg_Q75.jpg" alt="Book 6">
+                <h3>雾都孤儿</h3>
+                <p>作者: 狄更斯</p>
+                <p>价格: ¥13.99</p>
+                <button>加入购物车</button>
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i3/101450072/O1CN01dY9oeD1CP1OYxMr8o-101450072.jpg_Q75.jpg" alt="Book 7">
+                <h3>围城</h3>
+                <p>作者: 钱钟书</p>
+                <p>价格: ¥8.99</p>
+                <button>加入购物车</button>
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i3/247777394/O1CN01828jPX24UV81Cp2Nb_!!247777394.jpg_Q75.jpg" alt="Book 8">
+                <h3>童年</h3>
+                <p>作者: 高尔基</p>
+                <p>价格: ¥15.99</p>
+                <button>加入购物车</button>
+            </div>
+            <!-- Add more featured books here -->
+        </div>
+    </main>
+
+    <!-- 在footer元素之前添加返回顶部按钮横条 -->
+    <div class="separator"></div>
+    <div class="back-to-top-bar">
+        <a href="#top">返回顶部</a>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            &copy; 2023 Online Bookstore
+        </div>
+    </footer>
+    
+    
+    <div class="back-to-top">
+        <a href="#top">返回顶部</a>
+    </div>
+    
+</body>
+</html>

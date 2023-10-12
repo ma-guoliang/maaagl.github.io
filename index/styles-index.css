@@ -1,0 +1,157 @@
+/* styles-index.css */
+/* CSS styles for the Online Bookstore homepage */
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a web-safe font */
+}
+
+/* Apply a background color and center text in header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style navigation links */
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the main content area */
+main {
+    padding: 1rem;
+}
+
+/* Style featured books section */
+.featured-books {
+    display: flex; /* Use flex layout */
+    flex-wrap: wrap; /* Wrap items to the next line for smaller screens */
+    justify-content: space-between; /* Arrange items horizontally with even spacing */
+}
+
+/* Style individual book items within featured books section */
+.book {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: calc(25% - 2rem); /* Display 4 books per row, calculate width and subtract margin */
+    box-sizing: border-box; /* Include border and padding in the element's width */
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove image spacing */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Style the "Add to Cart" button */
+.book button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.book button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+
+
+
+/* CSS样式中添加以下样式 */
+.back-to-top {
+    position: fixed; /* 使按钮固定在屏幕上 */
+    bottom: 20px; /* 距离底部的距离 */
+    right: 20px; /* 距离右侧的距离 */
+    background-color: transparent; /* 透明背景颜色 */
+    color: #007bff; /* 按钮文字颜色 */
+    border: 2px solid #007bff; /* 添加边框 */
+    border-radius: 50%; /* 使按钮变成圆形 */
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 16px; /* 文字大小 */
+    cursor: pointer;
+    /*display: none; /* 初始时隐藏按钮 */
+    z-index: 999; /* 使按钮显示在其他元素之上 */
+}
+
+.back-to-top:hover {
+    background-color: #007bff; /* 按钮背景颜色在悬停时变化 */
+    color: #fff; /* 按钮文字颜色在悬停时变化 */
+}
+
+
+
+
+
+/* 返回顶部按钮横条样式 */
+.back-to-top-bar {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* 固定按钮在页脚的位置 */
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* 添加分隔线和按钮长度一致的样式 */
+.separator {
+    height: 3px;
+    background-color: white;
+    width: 100%; /* 分隔线宽度100% */
+}
+
+/* 返回顶部按钮长度一致的样式 */
+.back-to-top-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block; /* 使按钮具有块级元素特性 */
+    width: 100%; /* 按钮宽度100%以匹配分隔线和页脚 */
+    padding: 0.5rem;
+    box-sizing: border-box; /* 包括边框和内边距在内的按钮宽度 */
+}
+
+/* 返回顶部按钮悬停时的样式 */
+.back-to-top-bar:hover {
+    background-color: #444;
+}

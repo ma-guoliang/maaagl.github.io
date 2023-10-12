@@ -1,0 +1,75 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-cart.css">
+    <title>Shopping Cart</title>
+
+
+
+
+</head>
+<body>
+
+   
+
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">主页</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>购物车</h2>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <p>总计: ¥<span id="cart-total">0</span></p>
+        <button onclick="checkout()">付款</button>
+        <button onclick="clearCart()">清空</button>
+
+        <p id="cart-empty-message" class="error"></p>
+    </main>
+
+        <!-- Add this code between the "付款" and "清空" buttons in cart.html -->
+    <div id="book-carousel" class="carousel">
+        <div class="carousel-item">
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i2/859515618/O1CN01MTwl8N1rN5y2D6FT9_!!859515618.jpg_Q75.jpg" alt="Book 1">
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/O1CN01A7CNBE1WH2ecrB6Vi_!!288902762.jpg" alt="Book 2">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/TB2j1WeeKySBuNjy1zdXXXPxFXa_!!832978172.jpg" alt="Book 3">
+            </div>
+            <div class="book">
+                <img src="https://gw.alicdn.com/imgextra/i1/2200607228172/O1CN01J7uyYM2AEpH4q3OCd_!!2200607228172.jpg" alt="Book 4">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Add this script tag at the end of your cart.html, just before </body> -->
+    <script src="book-carousel.js"></script>
+
+
+
+
+    <footer>
+        &copy; 2023 Online Bookstore
+    </footer>   
+
+
+
+
+
+
+</body>
+</html>

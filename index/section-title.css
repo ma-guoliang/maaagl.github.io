@@ -1,0 +1,10 @@
+/* section-title.css */
+
+/* Center-align the section title */
+.section-title {
+    text-align: center;
+    margin: 20px auto; /* 设置标题的上下外边距为20px，左右外边距为auto以水平居中 */
+    font-size: 24px; /* 设置标题的字体大小 */
+    color: #333; /* 设置标题的颜色 */
+    text-transform: uppercase; /* 转换标题文字为大写 */
+}
